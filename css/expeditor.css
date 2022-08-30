@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.nav__img {
+    width: 40px;
+    height: 40px;
+    animation: rotate2 4.5s infinite;
+}
+
+.navbar{
+    background: #000;
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.my-anim {
+    animation: infinite;
+}
+
+.nav-link{
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 2);
+}
+
+.nav-link:hover{
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 2);
+    box-shadow: 0px 0px 10px white;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.eks__content{
+    position: relative;
+    /* height: 100vh; */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.657), rgba(0, 164, 49, 0.451));
+}
+
+.eks-img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #000;
+    object-fit: cover;
+    position: absolute;
+}
+
+
+.eks__content-info{
+    width: 330px;
+    height: 440px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 55, 255, 0.1);
+    border-radius: 10px;
+    position: relative;
+    transition: 1s linear;
+}
+
+.eks__content-info-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 1s linear;
+}
+
+.eks__content-info button{
+    width: 235px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+.eks__content-info-name{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.766), transparent);
+    margin-bottom: 0;
+    transition: 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.eks__content-info-name.animation-class{
+    opacity: 1;
+}
+
+.anim1{
+    transition-delay: .4s;
+}
+
+.anim2{
+    transition-delay: 0.7s;
+}
+
+.anim3{
+    transition-delay: 1s;
+}
+
+.anim4{
+    transition-delay: 1.3s;
+}
+
+.anim5{
+    transition-delay: 1.6s;
+}
+
+.anim6{
+    transition-delay: 1.9s;
+}
+
+.anim7{
+    transition-delay: 2.2s;
+}
+
+.anim8{
+    transition-delay: 2.5s;
+}
+
+
+/* === footer === */
+
+
+.footer{
+    height: 80px;
+    background: #000;
+}
+
+.footer__link{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__link li{
+    list-style: none;
+}
+
+.footer__list{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    transition: .2s linear;
+}
